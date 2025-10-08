@@ -4,7 +4,7 @@ from pydantic import BaseModel
 from typing import List, Optional
 from backend.router.mistral_router import route_chat
 from backend.summarizer.mistral_summarizer import summarize_chat
-from backend.vector_db.weaviate_client import store_summary, retrieve_context
+from backend.vector_db.vector_db_client import store_summary, retrieve_context
 
 # -----------------------------
 # Pydantic models
