@@ -18,16 +18,18 @@ typing_extensions==4.15.0
 urllib3==2.5.0
 uvicorn==0.37.0
 
-# additional CPU-friendly packages
-mistralai==0.3.0
+# GPU-enabled packages
+mistralai==1.9.11
 sentence-transformers==2.2.2
 weaviate-client==4.12.1
 
-# CPU-friendly PyTorch for compatibility
-torch==2.8.0
+# GPU PyTorch packages
+torch==2.3.1
 torchvision==0.18.1
-torchaudio==2.8.0
--f https://download.pytorch.org/whl/cu128/torch_stable.html
+torchaudio==2.3.1
+--extra-index-url https://download.pytorch.org/whl/cu121
 
-
-
+#huggingface packages
+huggingface_hub==0.13.4
+transformers==4.29.0 
+tokenizers==0.13.3
