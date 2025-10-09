@@ -33,3 +33,7 @@ torchaudio==2.3.1
 huggingface_hub==0.13.4
 transformers==4.29.0 
 tokenizers==0.13.3
+
+# Other packages
+pytest
+pytest-cov
